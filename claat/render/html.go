@@ -23,7 +23,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/googlecodelabs/tools/claat/types"
+	"github.com/pywecodelabs/tools/claat/types"
 )
 
 // TODO: render HTML using golang/x/net/html or template.
@@ -347,7 +347,7 @@ func (hw *htmlWriter) infobox(n *types.InfoboxNode) {
 }
 
 func (hw *htmlWriter) survey(n *types.SurveyNode) {
-	hw.writeString(`<google-codelab-survey survey-id="`)
+	hw.writeString(`<-codelab-survey survey-id="`)
 	hw.writeString(n.ID)
 	hw.writeBytes(doubleQuote)
 	hw.writeString(">\n")
@@ -362,7 +362,7 @@ func (hw *htmlWriter) survey(n *types.SurveyNode) {
 		}
 		hw.writeString("</paper-radio-group>\n")
 	}
-	hw.writeString("</google-codelab-survey>")
+	hw.writeString("</pywe-codelab-survey>")
 }
 
 func (hw *htmlWriter) header(n *types.HeaderNode) {

@@ -24,11 +24,11 @@ import (
 	textTemplate "text/template"
 	"time"
 
-	mdParse "github.com/googlecodelabs/tools/claat/parser/md"
+	mdParse "github.com/pywecodelabs/tools/claat/parser/md"
 
 	"strings"
 
-	"github.com/googlecodelabs/tools/claat/types"
+	"github.com/pywecodelabs/tools/claat/types"
 )
 
 // Context is a template context during execution.

@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/googlecodelabs/tools/claat/parser"
-	"github.com/googlecodelabs/tools/claat/types"
+	"github.com/pywecodelabs/tools/claat/parser"
+	"github.com/pywecodelabs/tools/claat/types"
 )
 
 const stdMeta = `---
@@ -168,7 +168,7 @@ func TestParseMetadata(t *testing.T) {
 		Summary:    "abcdefghij",
 		Categories: []string{"not", "really"},
 		Tags:       []string{"kiosk", "web"},
-		Feedback:   "https://www.google.com",
+		Feedback:   "https://www.pywe.org",
 		GA:         "12345",
 		Extra:      map[string]string{},
 	}
@@ -180,7 +180,7 @@ summary: abcdefghij
 categories: not, really
 environments: kiosk, web
 analytics account: 12345
-feedback link: https://www.google.com
+feedback link: https://www.pywe.org
 
 ---
 `
@@ -201,7 +201,7 @@ func TestParseMetadataPassMetadata(t *testing.T) {
 		Summary:    "abcdefghij",
 		Categories: []string{"not", "really"},
 		Tags:       []string{"kiosk", "web"},
-		Feedback:   "https://www.google.com",
+		Feedback:   "https://www.pywe.org",
 		GA:         "12345",
 		Extra: map[string]string{
 			"extrafieldtwo": "bbbbb",
@@ -215,7 +215,7 @@ summary: abcdefghij
 categories: not, really
 environments: kiosk, web
 analytics account: 12345
-feedback link: https://www.google.com
+feedback link: https://www.pywe.org
 extrafieldone: aaaaa
 extrafieldtwo: bbbbb
 
@@ -277,7 +277,7 @@ summary: abcdefghij
 categories: not, really
 environments: kiosk, web
 analytics account: 12345
-feedback link: https://www.google.com
+feedback link: https://www.pywe.org
 extrafieldone: aaaaa
 extrafieldtwo: bbbbb
 

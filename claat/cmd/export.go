@@ -26,11 +26,11 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/googlecodelabs/tools/claat/fetch"
-	"github.com/googlecodelabs/tools/claat/parser"
-	"github.com/googlecodelabs/tools/claat/render"
-	"github.com/googlecodelabs/tools/claat/types"
-	"github.com/googlecodelabs/tools/claat/util"
+	"github.com/pywecodelabs/tools/claat/fetch"
+	"github.com/pywecodelabs/tools/claat/parser"
+	"github.com/pywecodelabs/tools/claat/render"
+	"github.com/pywecodelabs/tools/claat/types"
+	"github.com/pywecodelabs/tools/claat/util"
 )
 
 // Options type to make the CmdExport signature succinct.

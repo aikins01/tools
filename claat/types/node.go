@@ -532,6 +532,7 @@ func (yt *YouTubeNode) Empty() bool {
 var IframeWhitelist = []string{
 	"google.com",
 	"google.dev",
+	"pywe.org",
 	"dartlang.org",
 	"web.dev",
 	"observablehq.com",

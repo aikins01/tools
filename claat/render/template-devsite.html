@@ -45,8 +45,8 @@ the License.
     </style>
   </head>
   <body class="devsite-full-width-page">
-    <google-codelab-analytics gaid="{{.GlobalGA}}"></google-codelab-analytics>
-    <google-codelab codelab-gaid="{{.Meta.GA}}"
+    <pywe-codelab-analytics gaid="{{.GlobalGA}}"></pywe-codelab-analytics>
+    <pywe-codelab codelab-gaid="{{.Meta.GA}}"
                     doc-id="{{.Meta.Source}}"
                     id="{{.Meta.ID}}"
                     title="{{.Meta.Title}}"
@@ -54,17 +54,17 @@ the License.
                     feedback-link="{{.Meta.Feedback}}"
                     {{if $.Meta.BadgePath}}badge-path="{{$.Meta.BadgePath}}"{{end}}>
       {{range $i, $e := .Steps}}{{if matchEnv .Tags $.Env}}
-        <google-codelab-step label="{{.Title}}" duration="{{.Duration.Minutes}}">
+        <pywe-codelab-step label="{{.Title}}" duration="{{.Duration.Minutes}}">
           {{if eq $i 0}}
-            <google-codelab-about codelab-title="{{$.Meta.Title}}"
+            <pywe-codelab-about codelab-title="{{$.Meta.Title}}"
                                   {{if $.Updated}}last-updated="{{$.Updated}}"{{end}}
                                   {{if $.Meta.Authors}}authors="{{$.Meta.Authors}}"{{end}}
                                   {{if $.Meta.BadgePath}}badge-path="{{$.Meta.BadgePath}}"{{end}}>
-            </google-codelab-about>
+            </pywe-codelab-about>
           {{end}}
           {{.Content | renderHTML $.Context}}
-        </google-codelab-step>
+        </pywe-codelab-step>
       {{end}}{{end}}
-    </google-codelab>
+    </pywe-codelab>
   </body>
 </html>
